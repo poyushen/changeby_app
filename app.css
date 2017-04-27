@@ -1,99 +1,93 @@
-#full{
-height:100%;
-width:100%;
+
+@font-face{font-family:seguiemj; src:url(../font/seguiemj.ttf);}
+
+body{
+  margin:10%;
 }
-#main{
-height:50%;
-width:80%;
-float:left;
-margin-left:10vw;
-margin-top:25vh;
-}
-#title{
-height:25%;
-width:99%;
+*{
+  margin:0px;
+  padding:0px;
+  border:0px;
+  font-family:"seguiemj";
+  color:black;
+  font-size:12px;
 }
 #icon{
-height:100%;
-width:19%;
-float:left;
+  width:10%;
+  display:block;
+  margin:auto;
+  float:left;
+  padding-left:12.5%;
 }
-#iconpic{
-height:100%;
-width:100%;
-}
-#welcome{
-height:100%;
-width:76%;
-margin-left:3%;
-float:left;
-display:table;
-}
-#title_text{
-display:table-cell;
-color:rgb(139,69,19);
-font-size:180%;
-vertical-align:middle;
-
-}
-#form{
-height:60%;
-width:99%;
-margin-top:7%;
-
+#welcome_txt{
+  font-size:5vw;
+  font-family:"seguiemj";
+  text-align:center;
+  color:#a87b4f;
+  float:left;
+  padding-left:2%;
+  padding-top:3%;
+  margin-left:-2%;
 }
 input[type=email]{
-width:99%;
-height:30%;
-background-color:rgb(255,245,121);
-font-size:130%;
-border-color:white;
-border-top:none;
-border-left:none;
-}
-::-webkit-input-placeholder{
-color:white;
+  margin-top:8%;
+  background-color:rgb(255,228,146);
+  margin-left:12.5%;
+  width:75%;
+  height:4em;
+  margin-bottom:0.3em;
+  outline:none;
 }
 input[type=password]{
-width:99%;
-height:30%;
-background-color:rgb(255,245,121);
-font-size:130%;
-border-color:white;
-border-top:none;
-border-left:none;
+  background-color:rgb(255,228,146);
+  margin-left:12.5%;
+  width:75%;
+  height:4em;
+  margin-bottom:0.5em;
+  outline:none;
+}
+::-webkit-input-placeholder{
+  color:white;
 }
 input[type=button]{
-width:99%;
-height:28%;
-background-color:rgb(141,198,63);
-color:white;
-font-size:130%;
+  color:white;
+  background-color:rgb(138,163,40);
+  margin-left:12.5%;
+  width:75%;
+  height:4em;
+  margin-bottom:0.2em;
+  outline:none;
 }
-#forget_pwd{
-width:100%;
-border:none;
-background-color:white;
-font-size:90%;
-text-align:center;
-color:rgb(139,69,19);
-padding:1.5%;
+button{
+  display:block;
+  background-color:white;
+  margin-top:0.3em;
+  border:none;
+  color:#a87b4f;
+  text-align:center;
+  width:80%;
+  margin-left:12.5%;
+  outline:none;
 }
-#sign_up{
-width:100%;
-border:none;
-background-color:white;
-font-size:90%;
-text-align:center;
-color:rgb(139,69,19);
-padding:1.5%;
+  
+@media screen and (max-width:425px){
+  body{
+     margin-top:40%;
+  }
 }
-#aboutus{
-width:100%;
-border:none;
-background-color:white;
-font-size:90%;
-text-align:center;
-color:rgb(139,69,19);
-padding:1.5%;
+@media screen and (min-width:426px) and (max-width:768px){
+  body{
+    margin-top:20%;
+  }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+  body{
+    margin-bottom:10%;
+  }
+}
+@media screen and (min-width:1025px){
+  body{
+    margin-top:6%;
+    margin-bottom:6%;
+  }
 }
