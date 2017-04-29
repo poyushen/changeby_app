@@ -23,7 +23,7 @@ p
 #content_set
 {
 	position:fixed;
-	height:15%;
+	height:17%;
 	z-index:100;
 	background-color:white;
 	padding-top:2%;
@@ -146,7 +146,7 @@ p
 
 #data
 {
-	width:100%;
+	width:96%;
 	margin-top:0%;
 	position:absolute;
 	margin-top:30.5%;	/* 要看目前的height的大小去乘15後在+5左右 */
@@ -165,7 +165,7 @@ p
 	display:inline;
 	float:left;
 	font-size:13%;
-	margin-left:17.5%;
+	margin-left:18.5%;
 	
 }
 
@@ -175,7 +175,7 @@ p
 	display:inline;
 	float:left;
 	font-size:13%;
-	margin-left:7%;
+	margin-left:8.5%;
 }
 
 #data_NT
@@ -184,7 +184,7 @@ p
 	display:inline;
 	float:left;
 	font-size:13%;
-	margin-left:8%;
+	margin-left:9%;
 }
 
 #data_word_date
