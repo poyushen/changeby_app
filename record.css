@@ -1,0 +1,260 @@
+/* 字型 */
+@font-face{font-family:seguiemj; src:url(font/seguiemj.ttf);}
+@font-face{font-family:chinese; src:url(font/chinese.ttf);}
+
+/* 共用 + 預設的地方 */
+body
+{
+	background-color:white;
+	background-image:url(picture/background.png);
+	background-repeat:no-repeat;
+	background-size:30%;
+	background-position:center;
+	background-attachment:fixed;
+	font-family:"seguiemj";
+	margin-top:0%;
+}
+
+p
+{
+	color:rgb(169,124,80);
+}
+
+#content_set
+{
+	position:fixed;
+	height:15%;
+	z-index:100;
+	background-color:white;
+	padding-top:2%;
+
+}
+
+#title_word_photo
+{
+	height:40%;
+	width:100%;
+}
+
+
+#back_to_before
+{
+	width:10%;
+	height:80%;
+	display:inline;
+	float:left;
+	padding-left:3%;
+	padding-top:4%; 
+}
+
+#title__photo
+{
+	width:30%;
+	height:80%;
+	display:inline;
+	float:left;
+	padding-top:4%; 
+}
+
+#title__word
+{
+	width:56%;
+	height:80%;
+	display:inline;
+	float:right;
+	padding-left:0%;
+	padding-top:4%; 
+}
+
+#title_back_photo
+{
+	height:40%;
+	width:auto;
+}
+
+#title_photo
+{
+	width:17%;
+	height:auto;
+	padding-left:78%;
+	margin-top:0%; 
+}
+
+#title_word_Deposit
+{
+	margin-top:1%;
+	height:100%;
+	font-size:15.5%;
+	font-family:"chinese";
+}
+
+#title_row
+{
+	height:60%;
+}
+
+#date
+{
+	width:10%;
+	height:100%;
+	display:inline;
+	float:left;
+	font-size:15%;
+	padding-left:18%;
+	margin-top:5%;
+}
+
+#time
+{
+	width:10%;
+	height:100%;
+	display:inline;
+	float:left;
+	font-size:15%;
+	padding-left:18%;
+	margin-top:5%;
+}
+
+#NT
+{
+	width:10%;
+	height:100%;
+	display:inline;
+	float:left;
+	font-size:15%;
+	padding-left:18%;
+	margin-top:5%;
+}
+
+#title_word_date
+{
+	margin-top:15%;
+	height:100%;
+}
+
+#title_word_time
+{
+	margin-top:15%;
+	height:100%;
+}
+
+#title_word_NT
+{
+	margin-top:15%;
+	height:100%;
+}
+
+#data
+{
+	width:100%;
+	margin-top:0%;
+	position:absolute;
+	margin-top:30.5%;	/* 要看目前的height的大小去乘15後在+5左右 */
+	height:150%;  		/* 假設資料很多會上下滑動 */
+}
+
+#data_packet
+{
+	height:0.5%;
+	margin-top:0%;
+}
+
+#data_date
+{
+	width:20%;
+	display:inline;
+	float:left;
+	font-size:13%;
+	margin-left:17.5%;
+	
+}
+
+#data_time
+{
+	width:20%;
+	display:inline;
+	float:left;
+	font-size:13%;
+	margin-left:7%;
+}
+
+#data_NT
+{
+	width:20%;
+	display:inline;
+	float:left;
+	font-size:13%;
+	margin-left:8%;
+}
+
+#data_word_date
+{
+	margin-top:0%;
+	height:100%;
+}
+
+#data_word_time
+{
+	margin-top:0%;
+	height:100%;
+}
+
+#data_word_NT
+{
+	margin-top:0%;
+	height:100%;
+}
+
+
+
+/* media queries的地方 */
+
+@media screen and ( min-width: 375px )
+{	
+	#title_word_Deposit
+	{
+		margin-top:1%;
+		height:100%;
+		font-size:14.5%;
+		font-family:"chinese";
+	}
+}
+
+@media screen and ( min-width: 425px )
+{
+	#title_photo
+	{
+		width:17%;
+		height:auto;
+		padding-left:78%;
+		margin-top:0%; 
+	}
+	
+	#title_word_Deposit
+	{
+		margin-top:1%;
+		height:100%;
+		font-size:16.5%;
+		font-family:"chinese";
+	}
+}
+
+@media screen and ( min-width: 768px )
+{
+	#title_photo
+	{
+		width:10%;
+		height:auto;
+		padding-left:90%;
+		margin-top:0%; 
+	}
+	
+	#title_word_Deposit
+	{
+		margin-top:1%;
+		height:100%;
+		font-size:16.5%;
+		font-family:"chinese";
+	}
+	
+}
