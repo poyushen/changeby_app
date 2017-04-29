@@ -31,6 +31,24 @@ margin-bottom:0.3em;
 outline:none;
 }
 
+input[type=password]{
+margin-top:0%;
+background-color:rgb(255,228,146);
+margin-left:0%;
+width:100%;
+height:2.5em;
+margin-bottom:0.3em;
+outline:none;
+}
+input[type=email]{
+margin-top:0%;
+background-color:rgb(255,228,146);
+margin-left:0%;
+width:100%;
+height:2.5em;
+margin-bottom:0.3em;
+outline:none;
+}
 select[name=year]{
 margin-top:0%;
 margin-right:3.5%;
@@ -71,7 +89,7 @@ color:white;
 color:white;
 }
 
-input[type=button]{
+input[type=submit]{
 color:white;
 background-color:rgb(138,163,40);
 margin-left:0%;
