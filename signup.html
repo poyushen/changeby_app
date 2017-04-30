@@ -7,15 +7,14 @@
 
 <p>Sign up</p><br><br>
 <img src="picture/icon.png" id="icon"  align="middle">
-<form>
-<input type='text'  placeholder='   Username'><br>
-<input type='text'  placeholder='   Password'><br>
-<input type='text'  placeholder='   Confirm Password'><br>
-<input type='text'  placeholder='   Email'><br>
-</form>
-<p>Birthday</p>
-<form name="birthday">
 
+<form name="birthday" action="signup.njs" method="POST">
+<input type='text'  placeholder='   Username' name='username'><br>
+<input type='password'  placeholder='   Password' name='pwd'><br>
+<input type='password'  placeholder='   Confirm Password' name='checkpwd'><br>
+<input type='email'  placeholder='   Email' name='email'><br>
+
+<p>Birthday</p>
 <select name="year" onChange="if(this.form.month.value == '2') checkLeapYear(this.value)">
 <option value="">Year</option>
 </select>
@@ -26,25 +25,17 @@
 <option value="">Day</option>
 </select>
 
-</form>
 <br><br>
 <p>Debit Card</p>
-<form>
-<input type='text' name='id'><br><br><br>
-<input type="button" value="Create an account">
+<input type="text" name="debit_card"><br><br><br>
+<input type="submit" value="Create an account">
 </form>
 
-<button id="forget_pwd">About us</button><br>
+<button id="aboutus">About us</button><br>
 
-<div id='enterform'>
-<title>sign up</title>
-<form>
-</form>
-<script src='app.js'></script>
-</div>
 
 <script>
-var beginYear = 1960;  //西元年份起始
+var beginYear = 1960; 
 var endYear = ((new Date()).getFullYear());
 var birthday_form = document.birthday;
 for(var i=beginYear;i<=endYear;i++) {
@@ -88,4 +79,3 @@ birthday_form.day.options[29] = new Option(29,29,false,false);
 
 </body>
 </html>
-
