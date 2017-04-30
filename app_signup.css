@@ -58,7 +58,8 @@ width:31%;
 height:2.5em;
 margin-bottom:0.3em;
 outline:none;
-color:white;
+color:#a87b4f;
+text-align:center;
 }
 
 select[name=month]{
@@ -70,7 +71,7 @@ width:31%;
 height:2.5em;
 margin-bottom:0.3em;
 outline:none;
-color:white;
+color:#a87b4f;
 }
 
 select[name=day]{
@@ -81,7 +82,7 @@ width:31%;
 height:2.5em;
 margin-bottom:0.3em;
 outline:none;
-color:white;
+color:#a87b4f;
 }
 
 
@@ -111,7 +112,12 @@ margin-left:0%;
 outline:none;
 }
 
-
+#bankcode{
+  width:31%;
+}
+#bankname{
+  width:45%;
+}
 p{
 font-size:1.5vw;
 color:#a87b4f;

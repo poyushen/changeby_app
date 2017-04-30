@@ -1,37 +1,47 @@
 <html>
 <head>
+<title>Sign_up</title>
 <link rel="stylesheet" type="text/css" href="app_signup.css">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 </head>
 <body>
 
-<p>Sign up</p><br><br>
+<p>註冊</p><br><br>
 <img src="picture/icon.png" id="icon"  align="middle">
 
 <form name="birthday" action="signup.njs" method="POST">
-<input type='text'  placeholder='   Username' name='username'><br>
-<input type='password'  placeholder='   Password' name='pwd'><br>
-<input type='password'  placeholder='   Confirm Password' name='checkpwd'><br>
-<input type='email'  placeholder='   Email' name='email'><br>
+<p>帳號名稱</p>
+<input type='text' name='username'><br>
+<p>密碼</p>
+<input type='password' name='pwd'><br>
+<p>確認密碼</p>
+<input type='password' name='checkpwd'><br>
+<p>Email</p>
+<input type='email' name='email'><br>
 
-<p>Birthday</p>
+<p>生日</p>
 <select name="year" onChange="if(this.form.month.value == '2') checkLeapYear(this.value)">
-<option value="">Year</option>
+<option value="">年</option>
 </select>
 <select name="month" onChange="changeDay(this.selectedIndex)">
-<option value="">Month</option>
+<option value="">月</option>
 </select>
 <select name="day">
-<option value="">Day</option>
+<option value="">日</option>
 </select>
 
-<br><br>
-<p>Debit Card</p>
+<br>
+<p>銀行代號</p>
+<input type='text' name="bank_code" id="bankcode"><br>
+<p>戶名</p>
+<input type='text' name="bank_name" id="bankname"><br>
+<p>銀行帳號</p>
 <input type="text" name="debit_card"><br><br><br>
-<input type="submit" value="Create an account">
+<input type="submit" value="建立帳號">
 </form>
 
-<button id="aboutus">About us</button><br>
+<button id="aboutus">關於我們</button><br>
 
 
 <script>
