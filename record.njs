@@ -40,8 +40,6 @@ connection.('SELECT * from record',function(err,rows,fields){
 		console.log('error');
  });
  
- 
- console.log(data);
- 
+  
  connection.end();
 
