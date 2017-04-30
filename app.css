@@ -59,15 +59,14 @@ input[type=button]{
   outline:none;
 }
 button{
+border-style:solid;
   display:block;
   background-color:white;
   margin-top:0.3em;
-  border:none;
   color:#a87b4f;
   text-align:center;
-  width:80%;
+  width:75%;
   margin-left:12.5%;
-  outline:none;
 }
   
 @media screen and (max-width:425px){
@@ -75,19 +74,13 @@ button{
      margin-top:40%;
   }
 }
-@media screen and (min-width:426px) and (max-width:768px){
+@media screen and (min-width:426px) and (max-width:1024px){
   body{
     margin-top:20%;
   }
 }
-@media screen and (min-width:769px) and (max-width:1024px){
-  body{
-    margin-bottom:10%;
-  }
-}
 @media screen and (min-width:1025px){
   body{
-    margin-top:6%;
-    margin-bottom:6%;
+    margin-top:15%;
   }
 }

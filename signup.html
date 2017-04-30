@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Sign_up</title>
+<link rel="stylesheet" type="text/css" href="app_signup.css">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+</head>
+<body>
+
+<p>註冊</p><br><br>
+<img src="picture/icon.png" id="icon"  align="middle">
+
+<form name="birthday" action="signup.njs" method="POST">
+<p>帳號名稱</p>
+<input type='text' name='username'><br>
+<p>密碼</p>
+<input type='password' name='pwd'><br>
+<p>確認密碼</p>
+<input type='password' name='checkpwd'><br>
+<p>Email</p>
+<input type='email' name='email'><br>
+
+<p>生日</p>
+<select name="year" onChange="if(this.form.month.value == '2') checkLeapYear(this.value)">
+<option value="">年</option>
+</select>
+<select name="month" onChange="changeDay(this.selectedIndex)">
+<option value="">月</option>
+</select>
+<select name="day">
+<option value="">日</option>
+</select>
+
+<br>
+<p>銀行代號</p>
+<input type='text' name="bank_code" id="bankcode"><br>
+<p>戶名</p>
+<input type='text' name="bank_name" id="bankname"><br>
+<p>銀行帳號</p>
+<input type="text" name="debit_card"><br><br><br>
+<input type="submit" value="建立帳號">
+</form>
+
+<button id="aboutus">關於我們</button><br>
+
+
+<script>
+var beginYear = 1960; 
+var endYear = ((new Date()).getFullYear());
+var birthday_form = document.birthday;
+for(var i=beginYear;i<=endYear;i++) {
+birthday_form.year.options[i-beginYear+1] = new Option(i,i,false,false);
+}
+for(var i=1;i<=12;i++) {
+birthday_form.month.options[i] = new Option(i,i,false,false);
+}
+for(var i=1;i<=31;i++) {
+birthday_form.day.options[i] = new Option(i,i,false,false);
+}
+function changeDay(month) {
+var obj = birthday_form.day;
+obj.options.length = 29;
+switch (month) {
+case 2:
+checkLeapYear(birthday_form.year.value);
+break;
+case 1:
+case 3:
+case 5:
+case 7:
+case 8:
+case 10:
+case 12:
+obj.options[31] = new Option(31,31,false,false);
+case 4:
+case 6:
+case 9:
+case 11:
+obj.options[29] = new Option(29,29,false,false);
+obj.options[30] = new Option(30,30,false,false);
+}
+}
+function checkLeapYear(year) {
+birthday_form.day.length = 29;
+if ( (year % 400 == 0) || ((year % 100 > 0) && (year % 4 == 0)) )
+birthday_form.day.options[29] = new Option(29,29,false,false);
+}
+</script>
+
+</body>
+</html>
