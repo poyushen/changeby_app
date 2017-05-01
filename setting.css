@@ -16,7 +16,7 @@ body{
 h3{
   color:#a87b4f;
   font-size:12px;
-  font-weight:normal
+  font-weight:normal;
 }
 
 #setting{
@@ -36,7 +36,7 @@ p{
 }
 
 input[type=text],input[type=password]{
-  background-color:#fff579;
+  background-color:rgb(255,228,146);
   width:100%;
   height:3em;
   margin-bottom:1em;
@@ -44,7 +44,7 @@ input[type=text],input[type=password]{
 }
 
 input[type=submit]{
-  background-color:#8cc63e;
+  background-color:rgb(138,163,40);
   float:left;
   margin-top:25%;
   width:35%;
@@ -59,4 +59,10 @@ input[type=reset]{
   width:35%;
   height:4em;
   color:white
+}
+input[name=bank_name]{
+  width:50%;
+}
+input[name=bank_code]{
+  width:30%;
 }
