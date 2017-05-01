@@ -1,0 +1,62 @@
+@font-face{font-family:seguiemj; src:url(../font/seguiemj.ttf);}
+
+body{
+  margin:15%;
+}
+
+*{
+  margin:0px;
+  padding:0px;
+  border:0px;
+  font-family:"seguiemj";
+  color:black;
+  font-size:12px
+}
+
+h3{
+  color:#a87b4f;
+  font-size:12px;
+  font-weight:normal
+}
+
+#setting{
+  margin-top:1%;
+  width:4%;
+  padding-right:2%
+}
+
+#logo{
+  width:15%;
+  display:block;
+  margin:auto;
+}
+
+p{
+  color:#a87b4f;
+}
+
+input[type=text],input[type=password]{
+  background-color:#fff579;
+  width:100%;
+  height:3em;
+  margin-bottom:1em;
+  margin-top: -0.2em
+}
+
+input[type=submit]{
+  background-color:#8cc63e;
+  float:left;
+  margin-top:25%;
+  width:35%;
+  height:4em;
+  color:white
+}
+
+input[type=reset]{
+  background-color:#a87b4f;
+  float:right;
+  margin-top:25%;
+  width:35%;
+  height:4em;
+  color:white
+}
