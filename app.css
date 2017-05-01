@@ -49,7 +49,7 @@ input[type=password]{
 ::-webkit-input-placeholder{
   color:white;
 }
-input[type=button]{
+#login{
   color:white;
   background-color:rgb(138,163,40);
   margin-left:12.5%;
@@ -58,7 +58,7 @@ input[type=button]{
   margin-bottom:0.2em;
   outline:none;
 }
-button{
+input[type=button]{
 border-style:solid;
   display:block;
   background-color:white;
@@ -67,6 +67,7 @@ border-style:solid;
   text-align:center;
   width:75%;
   margin-left:12.5%;
+  outline:none;
 }
   
 @media screen and (max-width:425px){
