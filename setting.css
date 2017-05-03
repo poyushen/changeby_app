@@ -12,11 +12,10 @@ body{
   color:black;
   font-size:12px
 }
-
 h3{
   color:#a87b4f;
-  font-size:12px;
-  font-weight:normal
+  font-size:2vw;
+  font-weight:normal;
 }
 
 #setting{
@@ -59,4 +58,10 @@ input[type=reset]{
   width:35%;
   height:4em;
   color:white
+}
+input[name=bank_name]{
+  width:50%;
+}
+input[name=bank_code]{
+  width:30%;
 }

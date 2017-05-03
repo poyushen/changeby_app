@@ -3,27 +3,32 @@
 
 <head>
   <title>Setting</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   <link rel="stylesheet" href="setting.css" 
 </head>
 
 <body>
   <img src="picture/setting.png" id="setting" alt="setting" align="left">
-  <h3>Setting</h3><br>
+  <h3>設置</h3><br>
   <img src="picture/icon.png" id="logo" alt="logo" align="middle"><br>
 
   <form>
-    <p>Chnage Username</p>
-    <input type="text"><br>
-    <p>Change Password</p>
-    <input type="password"><br>
-    <p>Confirm Password</p>
-    <input type="password"><br>
-    <p>Change Bank account</p>
-    <input type="text"><br>
+    <p>更改帳號名稱</p>
+    <input type="text" name="username"><br>
+    <p>密碼</p>
+    <input type="password" name="pwd"><br>
+    <p>確認密碼</p>
+    <input type="password" name="checkpwd"><br>
+    <p>更改銀行代號</p>
+    <input type="text" name="bank_code"><br>
+    <p>更改戶名</p>
+    <input type="text" name="bank_name"><br>
+    <p>更改銀行帳號</p>
+    <input type="text" name="bank_account">
 
-    <input type="submit" value="Save">
-    <input type="reset" value="Cancel">
+    <input type="submit" value="確認">
+    <input type="reset" value="取消">
 
   </form>
 </body>
