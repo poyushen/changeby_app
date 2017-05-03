@@ -1,10 +1,22 @@
-body{
-margin:5%;
-}
+#full{
 
+overflow:hidden;
+
+}
+#left{
+width:30%;
+float:left;
+margin-left:-31%;
+background-color:rgb(255,228,146);
+}
+#right{
+overflow:hidden;
+
+}
 #topbar{
 width:100%;
 height:5vw;
+margin-top:5%;
 
 }
 input[name=menu]
@@ -12,12 +24,14 @@ input[name=menu]
 width:7%;
 float:left;
 outline:none;
+margin-left:5%;
 }
 input[name=setting]
 {
 float:right;
 width:5%;
 outline:none;
+margin-right:5%;
 }
 
 input[name=pic]
@@ -28,7 +42,7 @@ float:left;
 border-style:solid;
 border-color:rgba(169,134,80,0.3);
 border-radius:50%;
-margin-left:6%;
+margin-left:10%;
 
 outline:none;
 
@@ -37,6 +51,7 @@ p{
 color:rgb(169,134,80);
 line-height:50%;
 font-size:4vw;
+
 }
 #purpose{
 
@@ -67,7 +82,7 @@ text-align:center;
 width:25%;
 height:5%;
 margin-right:10%;
-margin-top:15%;
+margin-top:10%;
 outline:none;
 }
 #record{
@@ -142,19 +157,17 @@ outline:none;
 
 
 @media screen and (min-width:426px) and (max-width:768px){
-body{
-margin-top:3%;
-}
+
 input[name=pic]{
 width:18vw;
 height:18vw;
 }
 p{
-font-size:3vw;
+font-size:2.5vw;
 }
 #pig{
-width:60%;
-margin-left:20%;
+width:55%;
+margin-left:22.5%;
 }
 #record_btn{
 margin-top:10%;
@@ -175,7 +188,7 @@ height:40vw;
 margin-top:-40vw;
 }
 .position{
-height:70%;
+height:90%;
 margin-top:20%;
 }
 #img_position{
@@ -185,9 +198,7 @@ margin-left:20%;
 }
 }
 @media screen and (min-width:769px)and (max-width:1024px){
-body{
-margin-top:3%;
-}
+
 
 input[name=pic]{
 width:15vw;
@@ -224,7 +235,7 @@ height:35vw;
 margin-top:-35vw;
 }
 .position{
-height:90%;
+height:95%;
 margin-top:15%;
 }
 #img_position{
@@ -232,12 +243,13 @@ width:45%;
 margin-left:27.5%;
 
 }
+.upload{
+margin-top:5%;
+}
 
 }
 @media screen and (min-width:1025px){
-body{
-margin-top:3%;
-}
+
 input[name=pic]{
 width:10vw;
 height:10vw;
@@ -274,7 +286,7 @@ height:25vw;
 margin-top:-25vw;
 }
 .position{
-height:80%;
+height:100%;
 margin-top:10%;
 }
 #img_position{
@@ -283,7 +295,7 @@ margin-left:30%;
 
 }
 .upload{
-margin-top:5%;
+margin-top:2%;
 }
 
 
