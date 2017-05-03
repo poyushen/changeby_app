@@ -45,18 +45,18 @@ input[type=text],input[type=password]{
 input[type=submit]{
   background-color:rgb(138,163,40);
   float:left;
-  margin-top:25%;
+  margin-top:15%;
   width:35%;
-  height:4em;
+  height:3em;
   color:white
 }
 
 input[type=reset]{
   background-color:#a87b4f;
   float:right;
-  margin-top:25%;
+  margin-top:15%;
   width:35%;
-  height:4em;
+  height:3em;
   color:white
 }
 input[name=bank_name]{
