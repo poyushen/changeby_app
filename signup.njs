@@ -33,6 +33,7 @@ var signup_data={
       console.log(err);
       throw error;
     }
-    console.log(signup_data);
+
 });
+
 connection.end();

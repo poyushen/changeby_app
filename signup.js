@@ -11,9 +11,16 @@ $('#create').click(()=>{
           bank:$('input[name="bank_name"]').val(),
           bankcode:$('input[name="bank_code"]').val(),
           card:$('input[name="debit_card"]').val()
+          
           },
     success:function(response){
-      window.location.href="https://luffy.ee.ncku.edu.tw/~poyushen/profile";
+      if($('input[name="pwd"]').val()==$('input[name="checkpwd"]').val()){
+        localStorage.setItem('key',$('input[name="username"]').val());
+        window.location.href="http://luffy.ee.ncku.edu.tw/~poyushen/profile";
+      }
+      else{
+        alert('請再次確認密碼');
+      }
     },
     error:function(){
       console.log('err');

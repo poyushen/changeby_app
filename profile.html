@@ -51,7 +51,7 @@
 </div>
 
 <div id='purpose'>
-<p>名稱</p>
+<p id='name'>名稱</p>
 <p>存款目的</p>
 </div>
 </div>
@@ -68,6 +68,10 @@
 </div>
 </div>
 </div>
+<script src='signup.js'></script>
+<script>
+document.getElementById("name").innerHTML=localStorage.getItem("key");
+</script>
 <script>
 $("#uploadImage").change(function(){
 readImage( this );
