@@ -11,14 +11,26 @@
 <body>
 <div id='full'>
 <div id='left'>
-<p>test</p>
+  <div id="menu_top">
+    <img src='picture/camera2.jpg' id='menu_pic'>
+  </div>
+  <div id="menu_bottom">
+    <div id='QRcode'>
+      <img src='picture/barcode2.png' id='barcode2'>
+      <p id='barcode_text'>條碼</p>
+    </div>
+    <div id='donate'>
+      <img src='picture/donate.png' id='donatepic'>
+      <p id='donate_text'>捐款</p>
+    </div>
+  </div>
 </div>
 
 <div id='right'>
 
 <div id='topbar'>
 <input type='image' img src='picture/menu.png' name='menu'>
-<input type='image' img src='picture/setting.png' name='setting' onclick="location.href='http://luffy.ee.ncku.edu.tw/~poyushen/setting'">
+<input type='image' img src='picture/setting.png' name='setting' onclick='location.href="http://luffy.ee.ncku.edu.tw/~poyushen/setting"'>
 </div>
 
 <div id='profile'>
@@ -66,6 +78,7 @@ var FR= new FileReader();
 FR.onload = function(e) {
 //e.target.result = base64 format picture
 $('#img_upload').attr( "src", e.target.result );
+$('#menu_pic').attr('src',e.target.result);
 };
 FR.readAsDataURL( input.files[0] );
 }
@@ -103,19 +116,18 @@ var w = $("#left").width();
 var flag=1;
 //$('#left').css('height', ($('#full').height()) );
 
-
 $('input[name=menu]').click(function(){
 if(flag==1){
 $('#left').css('height', ($('#full').height()) );
-$('#full').animate({width:'155%'},1000);
+$('#full').animate({width:'195%'},1000);
 $('#left').animate({marginLeft:'0px'},1000);
-$('#right').animate({marginLeft:'33%'},1000);
+$('#right').animate({marginLeft:'10%'},1000);
 flag=0;
 }
 else{
 $('#left').css('height', ($('#full').height()) );
 $('#full').animate({width:'100%'},1000);
-$('#left').animate({marginLeft:'-31%'},1000);
+$('#left').animate({marginLeft:'-46%'},1000);
 $('#right').animate({marginLeft:'0%'},1000);
 flag=1;
 }
