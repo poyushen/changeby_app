@@ -54,7 +54,7 @@ height:5vh;
 margin-bottom:0.3em;
 outline:none;
 }
-select[name=year]{
+#year{
 margin-top:0%;
 margin-right:3.5%;
 background-color:rgb(255,228,146);
@@ -67,7 +67,7 @@ color:#a87b4f;
 text-align:center;
 font-size:1.5vw;
 }
-select[name=month]{
+#month{
 margin-top:0%;
 margin-right:3.5%;
 background-color:rgb(255,228,146);
@@ -80,7 +80,7 @@ color:#a87b4f;
 font-size:1.5vw;
 }
 
-select[name=day]{
+#day{
 margin-top:0%;
 background-color:rgb(255,228,146);
 float:left;

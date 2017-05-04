@@ -1,16 +1,16 @@
 <html>
 <head>
 <title>Sign_up</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+</script>
 <link rel="stylesheet" type="text/css" href="app_signup.css">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 </head>
 <body>
-
 <p id='text'>註冊</p><br><br>
 <img src="picture/icon.png" id="icon"  align="middle">
 
-<form name="birthday" action="signup.njs" method="POST">
 <p id='username_position'>帳號名稱</p>
 <input type='text' name='username'><br>
 <p>密碼</p>
@@ -21,16 +21,15 @@
 <input type='email' name='email'><br>
 
 <p>生日</p>
-<select name="year" onChange="if(this.form.month.value == '2') checkLeapYear(this.value)">
+<select id="year" >
 <option value="">年</option>
 </select>
-<select name="month" onChange="changeDay(this.selectedIndex)">
+<select id="month" >
 <option value="">月</option>
 </select>
-<select name="day">
+<select id="day" >
 <option value="">日</option>
 </select>
-
 <br>
 <p>銀行代號</p>
 <input type='text' name="bank_code" id="bankcode"><br>
@@ -38,16 +37,39 @@
 <input type='text' name="bank_name" id="bankname"><br>
 <p>銀行帳號</p>
 <input type="text" name="debit_card"><br><br><br>
-<input type="submit" value="建立帳號">
-</form>
-
+<input type="submit" id='create' value="建立帳號">
+<script src='signup.js'></script>
 <button id="aboutus">關於我們</button><br>
 
 
 <script>
 var beginYear = 1960; 
 var endYear = ((new Date()).getFullYear());
-var birthday_form = document.birthday;
+
+for(var i=beginYear;i<=endYear;i++){
+    var x = document.getElementById("year");
+    var option = document.createElement("option");
+    option.text = i;
+    option.value=i;
+    x.add(option);
+}
+for(var i=1;i<=12;i++){
+  var y=document.getElementById("month");
+  var option=document.createElement("option");
+  option.text=i;
+  option.value=i;
+  y.add(option);
+}
+for(var i=1;i<=31;i++){
+var z = document.getElementById("day");
+var option = document.createElement("option");
+option.text = i;
+option.value=i;
+z.add(option);
+}
+/*var beginYear = 1960; 
+var endYear = ((new Date()).getFullYear());
+var birthday_form=document.birthday;
 for(var i=beginYear;i<=endYear;i++) {
 birthday_form.year.options[i-beginYear+1] = new Option(i,i,false,false);
 }
@@ -84,7 +106,7 @@ function checkLeapYear(year) {
 birthday_form.day.length = 29;
 if ( (year % 400 == 0) || ((year % 100 > 0) && (year % 4 == 0)) )
 birthday_form.day.options[29] = new Option(29,29,false,false);
-}
+}*/
 </script>
 
 </body>

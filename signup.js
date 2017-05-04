@@ -1,0 +1,22 @@
+$('#create').click(()=>{
+  $.ajax({
+    type:"POST",
+    url:'signup.njs',
+    data:{username:$('input[name="username"]').val(),
+          pwd:$('input[name="pwd"]').val(),
+          email:$('input[name="email"]').val(),
+          year:$('#year').val(),
+          month:$('#month').val(),
+          day:$('#day').val(),
+          bank:$('input[name="bank_name"]').val(),
+          bankcode:$('input[name="bank_code"]').val(),
+          card:$('input[name="debit_card"]').val()
+          },
+    success:function(response){
+      window.location.href="https://luffy.ee.ncku.edu.tw/~poyushen/profile";
+    },
+    error:function(){
+      console.log('err');
+    }
+  });
+});
