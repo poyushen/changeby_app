@@ -24,10 +24,11 @@ p
 {
 	position:fixed;
 	height:17%;
-	z-index:100;
+	width:100%;
+    z-index:100;
 	background-color:white;
 	padding-top:2%;
-
+  
 }
 
 #title_word_photo
@@ -101,7 +102,7 @@ p
 	float:left;
 	font-size:15%;
 	padding-left:18%;
-	margin-top:5%;
+	margin-top:3%;
 }
 
 #time
@@ -112,7 +113,7 @@ p
 	float:left;
 	font-size:15%;
 	padding-left:18%;
-	margin-top:5%;
+	margin-top:3%;
 }
 
 #NT
@@ -123,7 +124,7 @@ p
 	float:left;
 	font-size:15%;
 	padding-left:18%;
-	margin-top:5%;
+	margin-top:3%;
 }
 
 #title_word_date
@@ -146,10 +147,10 @@ p
 
 #data
 {
-	width:96%;
+	width:100%;
 	margin-top:0%;
 	position:absolute;
-	margin-top:30.5%;	/* 要看目前的height的大小去乘15後在+5左右 */
+	margin-top:28.5%;	/* 要看目前的height的大小去乘15後在+5左右 */
 	height:150%;  		/* 假設資料很多會上下滑動 */
 }
 
@@ -238,6 +239,26 @@ p
 	}
 }
 
+@media screen and ( min-width: 500px )
+{
+  #title_photo
+  {
+    width:15%;
+    height:auto;
+    padding-left:78%;
+    margin-top:0%;
+  }  
+  
+  #title_word_Deposit
+  {
+    margin-top:2%;
+    height:100%;
+    font-size:16.5%;
+    font-family:"chinese";
+  }
+}
+
+
 @media screen and ( min-width: 768px )
 {
 	#title_photo
@@ -256,4 +277,162 @@ p
 		font-family:"chinese";
 	}
 	
+	#date
+	{
+		width:10%;
+		height:100%;
+		display:inline;
+		float:left;
+		font-size:15%;
+		padding-left:18%;
+		margin-top:2%;
+	}
+
+	#time
+	{
+		width:10%;
+		height:100%;
+		display:inline;
+		float:left;
+		font-size:15%;
+		padding-left:18%;
+		margin-top:2%;
+	}
+
+	#NT
+	{
+		width:10%;
+		height:100%;
+		display:inline;
+		float:left;
+		font-size:15%;
+		padding-left:18%;
+		margin-top:2%;
+	}
+	
+	
+	#data
+	{
+		width:100%;
+		margin-top:0%;
+		position:absolute;
+		margin-top:15.5%;	/* 要看目前的height的大小去乘15後在+5左右->app比例 頁面變寬要慢慢調 */
+		height:150%;  		/* 假設資料很多會上下滑動 */
+	}
+	
+	
 }
+
+@media screen and ( min-width: 1000px )
+{		
+	body
+	{	
+		background-color:white;
+		background-image:url(picture/background.png);
+		background-repeat:no-repeat;
+		background-size:20%;
+		background-position:center;
+		background-attachment:fixed;
+		font-family:"seguiemj";
+		margin-top:0%;
+	}
+	
+	#content_set
+	{
+		position:fixed;
+		height:17%;
+		width:100%;
+		z-index:100;
+		background-color:white;
+		padding-top:2%;
+	}
+	
+	#back_to_before
+	{
+		width:10%;
+		height:80%;
+		display:inline;
+		float:left;
+		padding-left:3%;
+		padding-top:0%; 
+	}
+
+	#title__photo
+	{
+		width:30%;
+		height:80%;
+		display:inline;
+		float:left;
+		padding-top:0%; 
+	}
+
+	#title__word
+	{
+		width:56%;
+		height:80%;
+		display:inline;
+		float:right;
+		padding-left:0%;
+		padding-top:0%; 
+	}
+	
+	#title_photo
+	{
+		width:8%;
+		height:auto;
+		padding-left:90%;
+		margin-top:0%; 
+	}
+	
+	#title_word_Deposit
+	{
+		margin-top:1%;
+		height:100%;
+		font-size:16.5%;
+		font-family:"chinese";
+	}
+	
+	#date
+	{
+		width:10%;
+		height:100%;
+		display:inline;
+		float:left;
+		font-size:15%;
+		padding-left:18%;
+		margin-top:2%;
+	}
+
+	#time
+	{
+		width:10%;
+		height:100%;
+		display:inline;
+		float:left;
+		font-size:15%;
+		padding-left:18%;
+		margin-top:2%;
+	}
+
+	#NT
+	{
+		width:10%;
+		height:100%;
+		display:inline;
+		float:left;
+		font-size:15%;
+		padding-left:18%;
+		margin-top:2%;
+	}
+	
+	#data
+	{
+		width:100%;
+		margin-top:0%;
+		position:absolute;
+		margin-top:13.5%;	/* 要看目前的height的大小去乘15後在+5左右->app比例 頁面變寬要慢慢調 */
+		height:150%;  		/* 假設資料很多會上下滑動 */
+	}
+	
+}
+
