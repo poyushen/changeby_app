@@ -34,17 +34,19 @@ input[type=email]{
   background-color:rgb(255,228,146);
   margin-left:12.5%;
   width:75%;
-  height:4em;
+  height:7vh;
   margin-bottom:0.3em;
   outline:none;
+  font-size:2vh;
 }
 input[type=password]{
   background-color:rgb(255,228,146);
   margin-left:12.5%;
   width:75%;
-  height:4em;
+  height:7vh;
   margin-bottom:0.5em;
   outline:none;
+  font-size:2vh;
 }
 ::-webkit-input-placeholder{
   color:white;
@@ -54,9 +56,10 @@ input[type=password]{
   background-color:rgb(138,163,40);
   margin-left:12.5%;
   width:75%;
-  height:4em;
+  height:7vh;
   margin-bottom:0.2em;
   outline:none;
+  font-size:2vh;
 }
 input[type=button]{
 border-style:solid;
@@ -68,20 +71,21 @@ border-style:solid;
   width:75%;
   margin-left:12.5%;
   outline:none;
+  font-size:2vh;
 }
   
 @media screen and (max-width:425px){
   body{
-     margin-top:40%;
+     margin-top:30%;
   }
 }
 @media screen and (min-width:426px) and (max-width:1024px){
   body{
-    margin-top:20%;
+    margin-top:10%;
   }
 }
 @media screen and (min-width:1025px){
   body{
-    margin-top:15%;
+    margin-top:10%;
   }
 }
