@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>business</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+</script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<style>
+body{
+
+margin:10%;
+
+
+}
+#full{
+height:auto;
+overflow:hidden;
+}
+#bottom{
+  height:80%;
+    
+    }
+    p{
+    color:#a87b4f;
+    }
+    #icon{
+    width:15%;
+    float:left;
+    margin-left:20%;
+    }
+    #title{
+
+    font-size:5vw;
+    float:left;
+    margin-left:10%;
+    }
+    #entermoney{
+    margin-top:30%;
+    font-size:3vw;
+    margin-left:10%;
+
+    margin-bottom:0%;
+    }
+
+    input[type=text]{
+    margin-top:0%;
+    background-color:rgb(255,228,146);
+    margin-left:10%;
+    width:80%;
+    height:6vw;
+    outline:none;
+    border:none;
+    }
+    #check{
+    color:white;
+    background-color:rgb(138,163,40);
+    margin-left:10%;
+    width:30%;
+    height:6vw;
+    outline:none;
+    border:none;
+    margin-top:10%;
+    font-size:1.5vw;
+    float:left;
+    }
+    #cancel{
+    color:white;
+    background-color:#a87b4f;
+    float:right;
+    margin-right:10%;
+    width:30%;
+    height:6vw;
+    outline:none;
+    border:none;
+    margin-top:10%;
+    font-size:1.5vw;
+    }
+
+    </style>
+    </head>
+
+    <body>
+    <div id='full'>
+    <img src='picture/icon.png' id='icon'>
+    <p id='title'>交易系統</p><br>
+    <p id='entermoney'>輸入交易金額</p>
+    <input type='text' id='money' name='money'>
+    <button id='check'>確認交易</button>
+    <button id='cancel'>取消交易</button>
+    <div id='bottom'>
+    </div>
+    </div>
+    <script src='business.js'></script>
+    </body>
+    </html>

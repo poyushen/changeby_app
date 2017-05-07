@@ -1,0 +1,10 @@
+$('#check').click(()=>{
+  $.ajax({
+    type:"POST",
+    url:"business.njs",
+    data:{money:$('input[name="money"]').val()},
+    success:function(){
+      console.log($('input[name="money"]').val());
+    }
+  });
+});
