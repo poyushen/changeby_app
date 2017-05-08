@@ -1,4 +1,4 @@
-$('#create').click(()=>{
+$('#create').click(function(){
   $.ajax({
     type:"POST",
     url:'signup.njs',
