@@ -75,7 +75,12 @@ overflow:hidden;
     margin-top:10%;
     font-size:1.5vw;
     }
-
+    #remainder{
+    float:left;
+    margin-top:10%;
+    margin-left:10%;
+    font-size:3vw;
+    }
     </style>
     </head>
 
@@ -87,6 +92,10 @@ overflow:hidden;
     <input type='text' id='money' name='money'>
     <button id='check'>確認交易</button>
     <button id='cancel'>取消交易</button>
+    <p id='remainder'>餘額:0</p>
+    <script>
+      document.getElementById('remainder').innerHTML=localStorage.getItem('remainder');
+    </script>
     <div id='bottom'>
     </div>
     </div>

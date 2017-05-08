@@ -15,10 +15,20 @@ var connection=mysql.createConnection({
 });
 
 connection.connect();
-var currentmoney=1000-param.money;
 
-connection.query("UPDATE sign_up SET money=? WHERE username=?",[currentmoney,'store'],function(err,result){
-  if(err)
-    throw err;
+connection.query('select money from sign_up where ?', {username: 'store'}, (err, res) => {
+  var current = parseInt(res[0].money);
+  var change_money=parseInt(param.money);
+  connection.query('update sign_up set money = ? where username = ?', [current - change_money, 'store'] , () => {
+    connection.end();
+  });
+
 });
-connection.end();
+connection.query('select money from sign_up where ?', {username: param.username}, (err, res) => {
+  var current_user = parseInt(res[0].money);
+  var change_money=parseInt(param.money);
+  connection.query('update sign_up set money = ? where username = ?', [current_user + change_money, param.username] , () => {
+    connection.end();
+  });
+
+});
