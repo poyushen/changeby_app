@@ -1,0 +1,11 @@
+$.ajax({
+  type:"POST",
+  url:"process.njs",
+  success:function(data){
+    console.log(data);
+    localStorage.setItem('user_money',data);
+  },
+  error:function(){
+    console.log('err');
+  },
+});

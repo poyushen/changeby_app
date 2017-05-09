@@ -19,7 +19,7 @@ connection.connect();
 connection.query('select money from sign_up where ?', {username: 'store'}, (err, res) => {
   var current = parseInt(res[0].money);
   var change_money=parseInt(param.money);
-  console.log(current - change_money);
+  console.log(current-change_money);
   connection.query('update sign_up set money = ? where username = ?', [current - change_money, 'store'] , () => {
     connection.end();
   });
