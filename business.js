@@ -5,8 +5,8 @@ $.ajax({
   data:{
   },
   success:function(msg){
-    console.log(msg);
-    localStorage.setItem("user_remainder",msg);
+//    console.log(msg);
+//    localStorage.setItem("user_remainder",msg);
   },
   error:function(){
     console.log('error');
@@ -21,8 +21,8 @@ $('#check').click(function(){
       username: qrcode,
     },
     success:function(msg){
-//      console.log(msg);
-//      localStorage.setItem("user_remainder",msg);
+      console.log(msg);
+      localStorage.setItem("store_remainder",msg);
 //      location.reload();
    }
   });
