@@ -25,7 +25,8 @@ overflow:hidden;
 #menu_pic{
   margin-left:10%;
   margin-top:4vh;
-  height:60%;
+  height:20vw;
+  width:20vw;
   border-style:solid;
   border-radius:50%;
   border-color:rgba(169,134,80,0.2);
