@@ -150,7 +150,7 @@ p
 	width:100%;
 	margin-top:0%;
 	position:absolute;
-	margin-top:28.5%;	/* 要看目前的height的大小去乘15後在+5左右 */
+	margin-top:30.5%;	/* 要看目前的height的大小去乘15後在+5左右 */
 	height:150%;  		/* 假設資料很多會上下滑動 */
 }
 
@@ -261,6 +261,18 @@ p
 
 @media screen and ( min-width: 768px )
 {
+	body
+	{	
+		background-color:white;
+		background-image:url(picture/background.png);
+		background-repeat:no-repeat;
+		background-size:25%;
+		background-position:center;
+		background-attachment:fixed;
+		font-family:"seguiemj";
+		margin-top:0%;
+	}
+	
 	#title_photo
 	{
 		width:10%;

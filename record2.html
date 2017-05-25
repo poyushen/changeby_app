@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 		<link rel="stylesheet"type="text/css" href="record.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	</head>
 
@@ -39,34 +39,69 @@
 		</div>
 		
 		<div id="data">
-			<?php include "record.php";?>
-			<?php
-				for($i=1;$i<=mysql_num_rows($data);$i++)
-				{	$rs=mysql_fetch_row($data);
-			?>
-				<div id="data_packet">
-				<div id ="data_date">
-				<p id ="data_word_date">
-				<?php echo $rs[1]?>/
-				<?php echo $rs[2]?>/
-				<?php echo $rs[3]?>
-				</p>
-				</div>
-				<div id ="data_time">
-				<p id ="data_word_time">
-				<?php echo $rs[4]?>:
-				<?php echo $rs[5]?>
-				</p>
-				</div>
-				<div id ="data_NT">
-				<p id ="data_word_NT">
-				<?php echo $rs[6]?>
-				</p>
-				</div>
-				</div>
-				<?php }?>
+<!--        <div id="data_packet">
+        <div id ="data_date">
+        <p id ="data_word_date">
+           <p style="white-space:nowrap" id ="year" ></p>
+           /
+           <p style="white-space:nowrap" id ="mon" ></p>
+           /
+           <p style="white-space:nowrap" id ="day" ></p>
+        </p>
+        </div>
+        <div id ="data_time">
+           <p id ="data_word_time">
+           <p style="white-space:nowrap" id ="hour" ></p>
+           :
+           <p style="white-space:nowrap" id ="min" ></p>
+           </p>
+         </div>
+         <div id ="data_NT">
+           <p id ="data_word_NT">
+           <p style="white-space:nowrap" id ="nt" ></p>
+           </p>
+         </div>
+-->        </div>
 
+        <script type="text/javascript" >
+//        var reco = localStorage.getItem("reco");
+//        for(var i = 0; i< reco ; i++)
+        {
+       /* <div id="data_packet">
+        <div id ="data_date">
+        <p id ="data_word_date">
+            <p style="white-space:nowrap" id ="year" ></p>
+            /
+            <p style="white-space:nowrap" id ="mon" ></p>
+            /
+            <p style="white-space:nowrap" id ="day" ></p>
+
+        </p>
+        </div>
+        <div id ="data_time">
+        <p id ="data_word_time">
+          <p style="white-space:nowrap" id ="hour" ></p>
+          :
+          <p style="white-space:nowrap" id ="min" ></p>
+        </p>
+        </div>
+        <div id ="data_NT">
+        <p id ="data_word_NT">
+          <p style="white-space:nowrap" id ="nt" ></p>
+        </p>
+        </div>
+        </div>*/
+//			document.getElementById('year').innerHTML=localStorage.getItem("recordrowy[i]");
+//      document.getElementById('mon').innerHTML=localStorage.getItem("recordrowm[i]");
+//      document.getElementById('day').innerHTML=localStorage.getItem("recordrowd[i]");
+//      document.getElementById('hour').innerHTML=localStorage.getItem("recordrowh[i]");
+//      document.getElementById('min').innerHTML=localStorage.getItem("recordrowmin[i]");
+//      document.getElementById('nt').innerHTML=localStorage.getItem("recordrownt[i]");
+        }
+      </script>
 		</div>
+		
+		 <script src='printrecord.js'></script>
 	
 	</body>
 
