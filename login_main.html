@@ -1,30 +1,55 @@
 <html>
-<head>
-<title>Login</title>
-<link rel="stylesheet" href="app.css">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-</head>
+ <head>
+  <title>Login</title>
+  <link rel="stylesheet" href="app.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+ </head>
 
-<body>
-<div class="top">
-</div>
-<img src="picture/icon.png" id="icon" align="left";>
-<p id="welcome_txt">Welcome to ChangeBy</p>
+ <body>
+  <div class="top">
+  </div>
 
-<br><br>
-<input type="email" name='email' placeholder="       EMAIL">
-<input type="password" name='password' placeholder="       PASSWORD"><br><br>
-<p id='warn'></p>
-<input type="button" value="登入" id='login'>
+  <div class="title">
+   <img src="picture/icon.png" id="icon" align="left";>
+   <p id="welcome_txt">Welcome to ChangeBy</p>
+   <br><br>
+  </div>
 
-<input type="button" value='忘記密碼?'>
-<input type="button" value='註冊' onclick="location.href='http://luffy.ee.ncku.edu.tw/~poyushen/signup'">
-<input type="button" value='關於我們'>
+  <div class="description">
+   <p id="text">還在煩惱錢包零錢太多嗎？<br>買東西時在意找零太久嗎？<br>
+   店家找零太多時收進錢包太麻煩嗎？<br><br>Change By幫你存下生活中的零錢！<br>
+   在不知不覺中 幫你偷偷累積你的私房錢!</p>
+  </div>
 
-<script src='login.js'></script>
-</body>
+  <div id='center_pic'>
+    <div id='pic'>
+      <div id='change'>
+        <img src='picture/change.jpg' id='changepic'>
+        <p id='changetxt'>零錢直接存取</p>
+      </div>
+      <div id='phone'>
+        <img src='picture/phone.png' id='phonepic'>
+        <img src='picture/QRcode_brown.png' id='qrcode'>
+        <p id='phonetxt'>掃描QRcode存款</p>
+      </div>
+      <div id='heart'>
+        <img src='picture/heart.jpg' id='heartpic'>
+        <p id='hearttxt'>捐款</p>
+      </div>
+    </div>
+  </div>
+  <input type="email" name='email' placeholder="       EMAIL">
+  <input type="password" name='password' placeholder="       PASSWORD"><br><br>
+  <p id='warn'></p>
+  <input type="button" value="登入" id='login'>
+  <input type="button" value="Create an account" id='signup'>
+  <input type="button" value="忘記密碼?">
+  <input type="button" value="About us">
+  
+  <script src='login.js'></script>
 
+ </body>
 </html>
 
