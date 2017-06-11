@@ -1,6 +1,5 @@
 #full{
 
-overflow:hidden;
 
 }
 #remainder{
@@ -9,7 +8,7 @@ overflow:hidden;
 }
 
 #left{
-width:45%;
+width:43%;
 float:left;
 margin-left:-45%;
 }
@@ -19,12 +18,12 @@ overflow:hidden;
 }
 #menu_top{
   width:100%;
-  height:20vh;
+  height:30vw;
   background-color:rgb(255,228,146);
 }
 #menu_pic{
   margin-left:10%;
-  margin-top:4vh;
+  margin-top:5vw;
   height:20vw;
   width:20vw;
   border-style:solid;
@@ -33,26 +32,45 @@ overflow:hidden;
   float:left;
 }
 #QRcode,#donate{
-  margin-top:5%;
-  height:10%;
-  margin-left:30%;
-  border-style:solid;
-  border-color:rgba(255,255,255,0);
-}
-#barcode2,#donatepic{
-  margin-top:3.5vh;
-  width:10%;
   float:left;
-}
-#barcode_text,#donate_text{
-  margin-top:4vh;
-  margin-left:15%;
-  font-size:4.5vw;
+  margin-top:5vw;
+  height:20vw;
+  width:70%;
+  margin-left:30%;
+  border-color:rgba(255,255,255,0);
 }
 #QRcode_img{
   display:none;
+  float:left;
+  width:100%;
+  height:50%;
 }
-
+#barcode2,#donatepic{
+  margin-top:5vw;
+  width:8vw;
+  float:left;
+}
+#barcode_text,#donate_text{
+  margin-top:5vw;
+  margin-left:15%;
+  font-size:4.5vw;
+  float:left;
+  width:50%;
+}
+#options{
+  margin-left:50%;
+  width:50%;
+  float:left;
+  display:none;
+}
+#kid,#sick{
+  height:10vw;
+}
+#kid_agency,#sick_agency{
+  width:100%;
+  float:left;
+  display:none;
+}
 #topbar{
 width:100%;
 height:5vw;
@@ -88,7 +106,6 @@ outline:none;
 }
 p{
 color:rgb(169,134,80);
-line-height:50%;
 font-size:4vw;
 
 }

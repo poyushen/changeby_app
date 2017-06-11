@@ -81,15 +81,8 @@ body{
   margin-left:10%;
   float:left;
 }
-#qrcode{
-  width:20%;
-  margin-top:-18%;
-  float:left;
-  margin-left:15%;
-}
 #phonepic{
   width:60%;
-  margin-left:25%;
   margin-top:10%;
 }
 #phonetxt{
@@ -97,7 +90,7 @@ body{
   text-align:center;
   color:#a87b4f;
   font-size:0.5vw;
-  margin-top:8%;
+  margin-top:6%;
 }
 #heart{
   width:10%;

@@ -1,84 +1,95 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>Profile</title>
-<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<link rel="stylesheet" type="text/css" href="profile.css">
 
+<head>
+  <title>Profile</title>
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" type="text/css" href="profile.css">
 </head>
 
 <body>
-<div id='full'>
-<div id='left'>
-  <div id="menu_top">
-    <img src='picture/camera2.jpg' id='menu_pic'>
-  </div>
-  <div id="menu_bottom">
-    <div id='QRcode' style="cursor:pointer;">
-      <img src='picture/barcode2.png' id='barcode2'>
-      <p id='barcode_text'>條碼</p>
-      <div id='QRcode_img'>
-        <img src='picture/QRcode.jpg' style='width:50%'>
+  <div id='full'>
+    <div id='left'>
+      <div id="menu_top">
+        <img src='picture/camera2.jpg' id='menu_pic'>
+      </div>
+      <div id="menu_bottom">
+        <div id='QRcode' style="cursor:pointer;">
+          <img src='picture/barcode2.png' id='barcode2'>
+          <p id='barcode_text'>條碼</p>
+          <div id='QRcode_img'>
+            <img src='picture/QRcode.jpg' style='width:50%'>
+          </div>      
+        </div>
+        <div id='donate' style="cursor:pointer;">
+          <img src='picture/donate.png' id='donatepic'>
+          <p id='donate_text'>捐款</p>
+        </div>
+        <div id='options'>
+          <div id='kid' style="cursor:pointer;">
+            <p style="font-size:3.5vw">兒童</p>
+            <div id='kid_agency'>
+              <p style="font-size:3vw;" onclick="location.href='http://www.lovehome.org.tw/'">台中市愛心之家</p>
+              <p style="font-size:3vw;">兒童福利聯盟</p>
+            </div>
+          </div>
+          
+          <div id='sick' style="cursor:pointer;">
+            <p style="font-size:3.5vw">重大傷殘</p>
+            <div id='sick_agency'>
+              <p style="font-size:3vw;">陽光基金會</p>
+              <p style="font-size:3vw;">創世基金會</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div id='donate'>
-      <img src='picture/donate.png' id='donatepic'>
-      <p id='donate_text'>捐款</p>
-    </div>
-  </div>
-</div>
 
-<div id='right'>
-
-<div id='topbar'>
-<input type='image' img src='picture/menu.png' name='menu'>
-<input type='image' img src='picture/setting.png' name='setting' onclick='location.href="http://luffy.ee.ncku.edu.tw/~poyushen/setting"'>
-</div>
-
-<div id='profile'>
-<input type='image' img src='picture/camera1.jpg' name='pic' id='img'>
-
-<div id="myModal" class="modal">
-<!-- Modal content -->
-<div class="modal-content" id="content">
-<div class='position'>
-<div id='img_position'>
-<input type='image' img src='picture/camera1.jpg' id='img_upload'>
-<input accept="image/*" id="uploadImage" type="file">
-</div>
-<button class='upload'>上傳頭像</button>
-
-</div>
-</div>
-</div>
-
-<div id='purpose'>
-<p id='name'>名稱</p>
-<p>存款目的</p>
-</div>
-</div>
-<div id='wallet'>
-<img src='picture/pig.png' id='pig'>
-<p id='remainder'>0</p>
-</div>
-<button id='record_btn'>存款紀錄</button>
-<div id='record'>
-
-      <div id ="title_row">
-      <div id ="date">
-      <p id ="title_word_date">Date</p>
+    <div id='right'>
+      <div id='topbar'>
+        <input type='image' img src='picture/menu.png' name='menu'>
+        <input type='image' img src='picture/setting.png' name='setting' onclick='location.href="http://luffy.ee.ncku.edu.tw/~poyushen/setting"'>
       </div>
 
-      <div id ="time">
-      <p id ="title_word_time">Time</p>
-      </div>
+      <div id='profile'>
+        <input type='image' img src='picture/camera1.jpg' name='pic' id='img'>
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content" id="content">
+            <div class='position'>
+              <div id='img_position'>
+                <input type='image' img src='picture/camera1.jpg' id='img_upload'>
+                <input accept="image/*" id="uploadImage" type="file">
+              </div>
+              <button class='upload'>上傳頭像</button>
+            </div>
+          </div>
+        </div>
 
-      <div id ="NT">
-      <p id ="title_word_NT">NT</p>
+        <div id='purpose'>
+          <p id='name'>名稱</p>
+          <p>存款目的</p>
+        </div>
       </div>
+      
+      <div id='wallet'>
+        <img src='picture/pig.png' id='pig'>
+        <p id='remainder'>0</p>
       </div>
-
+      <button id='record_btn' onclick='location.href="http://luffy.ee.ncku.edu.tw/~poyushen/record2"'>存款紀錄</button>
+      <div id='record'>
+        <div id ="title_row">
+          <div id ="date">
+            <p id ="title_word_date">Date</p>
+          </div>
+          <div id ="time">
+            <p id ="title_word_time">Time</p>
+          </div>
+          <div id ="NT">
+            <p id ="title_word_NT">NT</p>
+          </div>
+        </div>
       </div>
 
       <div id="data">
@@ -89,10 +100,8 @@
 
       </div>
       <script src='printrecordpp.js'></script>
-       
-
-</div>
-</div>
+    </div>
+  </div>
 </div>
 <script src='signup.js'></script>
 <script>
@@ -108,7 +117,7 @@ var flag_qr=1;
     if(flag_qr==1){
       $('#QRcode_img').css('display','block');
       $('#QRcode_img').animate({height:'50%'},0);
-      $('#QRcode_img').animate({marginLeft:'5%'},0);
+      $('#QRcode_img').animate({marginLeft:'15%'},0);
       $('#donate').animate({marginTop:'20%'},0);
       flag_qr=0;
     }
@@ -119,6 +128,51 @@ var flag_qr=1;
     }
   });
 </script>
+<script>
+var flag_option=1;
+  $('#donate').click(function(){
+    if(flag_option==1){
+      $('#options').css('display','block');
+      flag_option=0;
+    }
+    else{
+      $('#options').css('display','none'); 
+      flag_option=1;
+    }
+  });
+</script>
+
+<script>
+  var flag_kid=1;
+  $('#kid').click(function(){
+    if(flag_kid==1){
+      $('#kid_agency').css('display','block');
+      $('#old').animate({marginTop:'10vh'},0);
+      $('#kid_agency').animate({marginLeft:'20%'},0);
+      flag_kid=0;
+    }
+    else{
+      $('#kid_agency').css('display','none');
+      $('#old').animate({marginTop:'0%'},0); 
+      flag_kid=1;
+    }
+  });
+</script>
+<script>
+  var flag_sick=1;
+  $('#sick').click(function(){
+    if(flag_sick==1){
+      $('#sick_agency').css('display','block');
+      $('#sick_agency').animate({marginLeft:'20%'},0);
+      flag_sick=0;
+    }
+    else{
+      $('#sick_agency').css('display','none');
+      flag_sick=1;
+    }
+  });
+</script>
+
 <script>
 $("#uploadImage").change(function(){
 readImage( this );
