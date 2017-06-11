@@ -3,6 +3,7 @@
 
 <head>
   <title>Setting</title>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   <link rel="stylesheet" href="setting.css" 
@@ -14,12 +15,14 @@
   <img src="picture/icon.png" id="logo" alt="logo" align="middle"><br>
 
   <form>
-    <p>更改帳號名稱</p>
-    <input type="text" name="username"><br>
+    <p>Eamil</p>
+    <input type="email" name="email"><br>
     <p>密碼</p>
     <input type="password" name="pwd"><br>
-    <p>確認密碼</p>
-    <input type="password" name="checkpwd"><br>
+    <p>帳號名稱</p>
+    <input type="text" name="username"><br>
+    <p>變更帳號名稱</p>
+    <input type="text" name="username1"><br>
     <p>更改銀行代號</p>
     <input type="text" name="bank_code"><br>
     <p>更改戶名</p>
@@ -27,8 +30,9 @@
     <p>更改銀行帳號</p>
     <input type="text" name="bank_account">
 
-    <input type="submit" value="確認">
+    <input type="submit" value="確認" id='change'>
     <input type="reset" value="取消" onclick='location.href="http://luffy.ee.ncku.edu.tw/~poyushen/profile"'>
 
   </form>
+  <script src='setting.js'></script>
 </body>
