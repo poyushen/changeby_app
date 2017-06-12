@@ -32,7 +32,6 @@ connection.query('select password from sign_up where?',{username:param.username}
     flag=1;
     connection.query(sql, [param.pwd1, param.username], function (err, result) {
       if (err) throw err;
-      console.log(result.affectedRows + " record(s) updated");
       console.log(flag);
     });
   } else {
