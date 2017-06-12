@@ -4,7 +4,7 @@ var fs = require('fs');
 var qs = require('qs');
 var param = qs.parse(fs.readFileSync('/dev/stdin', 'utf-8'));
 
-console.log('Content-type:text/html;charset=utf-8\n');
+console.log('Content-type:text/html; charset=utf-8\n');
 
 var mysql=require('mysql');
 var flag=0;
@@ -16,21 +16,29 @@ var connection=mysql.createConnection({
   database:'uidd2017_groupL'
 });
 
-connection.connect();
+connection.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
 
-connection.query('select password from sign_up where?',{email:param.email},(err,res) =>{
+//var email = "weichen@gmail.com"
+//var pwd = "1234"
+//var username = "weichen"
+//var bankcode1 = "1111"
+
+connection.query('select password from sign_up where?',{username:param.username},(err,res) =>{
   if(res[0].password==param.pwd){
-    var sql = "UPDATE sign_up SET username = username1";
+    var sql = "UPDATE sign_up SET password = ? WHERE username = ?";
     flag=1;
-    con.query(sql, function (err, result) {
+    connection.query(sql, [param.pwd1, param.username], function (err, result) {
       if (err) throw err;
       console.log(result.affectedRows + " record(s) updated");
-    console.log(flag);
-  }
-  else{
+      console.log(flag);
+    });
+  } else {
     flag=0;
     console.log(flag);
-   }
+  }
    connection.end();
 });
-`
+
