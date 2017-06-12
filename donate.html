@@ -1,91 +1,83 @@
-
-
 <html>
 <head>
 <title>donate</title>
 <link rel="stylesheet" href="donate.css">
-<meta http-equiv="Content-Type" contect="text/html; charset=utf-8" />
-
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <!--star-->
 <script type="text/javascript">
 function rate(obj,oEvent){
-// 图片地址设置
-var imgSrc = 'picture/star.png'; //没有填色的星星
-var imgSrc_2 = 'picture/star_full.png'; //打分后有颜色的星星
-if(obj.rateFlag) return;
-var e = oEvent || window.event;
-var target = e.target || e.srcElement; 
-var imgArray = obj.getElementsByTagName("img");
-for(var i=0;i<imgArray.length;i++){
-  imgArray[i]._num = i;
+  // 图片地址设置
+  var imgSrc = 'picture/star.png'; //没有填色的星星
+  var imgSrc_2 = 'picture/star_full.png'; //打分后有颜色的星星
+  if(obj.rateFlag) return;
+  var e = oEvent || window.event;
+  var target = e.target || e.srcElement; 
+  var imgArray = obj.getElementsByTagName("img");
+  for(var i=0;i<imgArray.length;i++){
+    imgArray[i]._num = i;
     imgArray[i].onclick=function(){
       if(obj.rateFlag) return;
-        obj.rateFlag=true;
-          alert(this._num+1); //this._num+1这个数字写入到数据库中,作为评分的依据
-            };
-            }
-            if(target.tagName=="IMG"){
-              for(var j=0;j<imgArray.length;j++){
-                if(j<=target._num){
-                   imgArray[j].src=imgSrc_2;
-                     } else {
-                        imgArray[j].src=imgSrc;
-                          }
-                            }
-                            } else {
-                              for(var k=0;k<imgArray.length;k++){
-                                imgArray[k].src=imgSrc;
-                                  }
-                                  }
-                                  }
-                                  </script>
-                                  <!--star_end-->
+      obj.rateFlag=true;
+      alert(this._num+1); //this._num+1这个数字写入到数据库中,作为评分的依据
+    };
+  }
+  if(target.tagName=="IMG"){
+    for(var j=0;j<imgArray.length;j++){
+      if(j<=target._num){
+        imgArray[j].src=imgSrc_2;
+      } else {
+        imgArray[j].src=imgSrc;
+      }
+    }
+  } else {
+    for(var k=0;k<imgArray.length;k++){
+      imgArray[k].src=imgSrc;
+    }
+  }
+}
+</script>
+<!--star_end-->
 
-                                  </head>
+</head>
 
-                                  <body>
-                                    <div id="banner">
-                                      
-                                          <div id="back_button">
-                                                <img id ="arrow" src="picture/arrow.png" alt="back_button" >
-                                                    </div>
-                                                        <div id="title_name">
-                                                              <p id="name">台中市愛心家園</p>
-                                                                  </div>
-                                                                    </div>
-                                                                      </div>
-                                                                        </div>
-                                                                          <div id="main_picture">
-                                                                              <img id="picture" src="picture/lovehome.png">
-                                                                                </div>
-                                                                                  
-                                                                                    <div id="main_intro">
-                                                                                        <p id="intro">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;台中市愛心家園原名為臺中市身心障礙福利服務中心。全棟建築物於林柏榕前市長任內落成，胡志強前市長為打造臺中市為愛心城市，所以將中心更名為「台中市愛心家園」，希望藉由愛心家園完善、無障礙的軟硬體設施設備，提供臺中市身心障礙朋友多元的服務。
-                                                                                        　　<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;經由臺中市政府公開評選後委託財團法人瑪利亞社會福利基金會經營管理，於91年9月28日正式啟用，整棟建築物有四個樓層，使用建坪為五千四百坪，目前開辦十項業務，這些服務項目含括就醫、就養、就學、就業四個領域，提供身心障礙者全方位的服務。
-                                                                                          </div>
-                                                                                            </div>
-                                                                                              
-                                                                                                <div id="main_QRCode">
-                                                                                                    <img id="QRCode" src="picture/test.png">
-                                                                                                      </div>
-                                                                                                        
-                                                                                                          <div id="star">
-                                                                                                              <p onmouseover="rate(this,event)">
-                                                                                                                 <img src="picture/star.png" title="爛爛的" id="star_1"/>
-                                                                                                                   <img src="picture/star.png" title="一般般" id="star_1"/>
-                                                                                                                     <img src="picture/star.png" title="還行啦" id="star_1"/>
-                                                                                                                       <img src="picture/star.png" title="不錯喔" id="star_1"/>
-                                                                                                                         <img src="picture/star.png" title="優秀秀" id="star_1"/>
-                                                                                                                           </p>
-                                                                                                                            </div>
-                                                                                                                              
-                                                                                                                                <div id="main_information">
-                                                                                                                                    <p  id="information" align="center">http://www.lovehome.org.tw/<br>
-                                                                                                                                        台中市南屯區東興路一段450號  TEL:886-4-24713535  FAX:886-4-24712624
-                                                                                                                                            <br>E-mail:service.tl@maria.org.tw
-                                                                                                                                                </p>
-                                                                                                                                                  </div>
-                                                                                                                                                    
-                                                                                                                                                    </body>
+<body>
+  <div id="banner">
+    <img id ="arrow" src="picture/arrow.png" alt="back_button" >
+    <p id="name">台中市愛心家園</p>
+  </div>
+  <div id="main_picture">
+    <img id="picture" src="picture/lovehome.png">
+  </div>
 
-                                                                                                                                                    </html>
+  <div id="main_intro">
+    <p id="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;台中市愛心家園，
+    希望藉由愛心家園完善及無障礙的軟硬體設施設備，提供身心障礙朋友多元服務。
+    經由臺中市政府公開評選後委託財團法人瑪利亞社會福利基金會經營管理。
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;於91年9月28日正式啟用，
+    服務含括就醫、就養、就學、就業四個領域，提供身心障礙者全方位服務。
+  </div>
+
+  <div id="main_QRCode">
+    <img id="QRCode" src="picture/test.png">
+  </div>
+
+  <div id="star">
+    <p onmouseover="rate(this,event)">
+    <img src="picture/star.png" title="爛爛的" id="star_1"/>
+    <img src="picture/star.png" title="一般般" id="star_1"/>
+    <img src="picture/star.png" title="還行啦" id="star_1"/>
+    <img src="picture/star.png" title="不錯喔" id="star_1"/>
+    <img src="picture/star.png" title="優秀秀" id="star_1"/>
+    </p>
+  </div>
+
+  <div id="main_information">
+    <p  id="information" align="center">http://www.lovehome.org.tw/<br>
+      台中市南屯區東興路一段450號  TEL:886-4-24713535  FAX:886-4-24712624
+      <br>E-mail:service.tl@maria.org.tw
+    </p>
+  </div>
+
+</body>
+
+</html>
