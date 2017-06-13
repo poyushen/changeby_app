@@ -15,35 +15,68 @@
         <img src='picture/camera2.jpg' id='menu_pic'>
       </div>
       <div id="menu_bottom">
-        <div id='QRcode' style="cursor:pointer;">
+        <div id='QRcode'>
           <img src='picture/barcode2.png' id='barcode2'>
-          <p id='barcode_text'>條碼</p>
+          <p id='barcode_text'>QRcode</p>
+          <img src='picture/arrow_down.png' id='down'> 
           <div id='QRcode_img'>
             <img src='picture/QRcode.jpg' style='width:50%'>
           </div>      
         </div>
-        <div id='donate' style="cursor:pointer;">
+        <div id='donate'>
           <img src='picture/donate.png' id='donatepic'>
           <p id='donate_text'>捐款</p>
+          <img src='picture/arrow_down.png' id='down2'>
         </div>
         <div id='options'>
-          <div id='kid' style="cursor:pointer;">
+          <div id='kid'>
             <p style="font-size:3.5vw">兒童</p>
             <div id='kid_agency'>
-              <p style="font-size:3vw;" onclick="location.href='http://www.lovehome.org.tw/'">台中市愛心之家</p>
-              <p style="font-size:3vw;">兒童福利聯盟</p>
+              <div id=kid_1>
+                <p id='kid_1_text'>台中市愛心之家</p>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+              </div>
+              <div id=kid_1>
+                <p id='kid_1_text'>兒童福利聯盟</p>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star.png' id='star'>
+              </div>
+
             </div>
           </div>
           
-          <div id='sick' style="cursor:pointer;">
-            <p style="font-size:3.5vw">重大傷殘</p>
+          <div id='sick'>
+            <p style="font-size:3.5vw;">重大傷殘</p>
             <div id='sick_agency'>
-              <p style="font-size:3vw;">陽光基金會</p>
-              <p style="font-size:3vw;">創世基金會</p>
+              <div id=kid_1>
+                <p id='kid_1_text'>陽光基金會</p>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+              </div>
+              <div id=kid_1>
+                <p id='kid_1_text'>創世基金會</p>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star_full.png' id='star'>
+                <img src='picture/star.png' id='star'>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
+      <img src='picture/icon.png' id='icon'>
     </div>
 
     <div id='right'>
@@ -114,30 +147,34 @@ document.getElementById("remainder").innerHTML=localStorage.getItem("user_money"
 </script>
 <script>
 var flag_qr=1;
-  $('#QRcode').click(function(){
+  $('#down').click(function(){
     if(flag_qr==1){
       $('#QRcode_img').css('display','block');
       $('#QRcode_img').animate({height:'50%'},0);
       $('#QRcode_img').animate({marginLeft:'15%'},0);
       $('#donate').animate({marginTop:'20%'},0);
+      $('#down').attr("src","picture/arrow_up.png");
       flag_qr=0;
     }
     else{
       $('#QRcode_img').css('display','none'); 
       $('#donate').animate({marginTop:'5%'},0);
+      $('#down').attr("src","picture/arrow_down.png");
       flag_qr=1;
     }
   });
 </script>
 <script>
 var flag_option=1;
-  $('#donate').click(function(){
+  $('#down2').click(function(){
     if(flag_option==1){
       $('#options').css('display','block');
+      $('#down2').attr("src","picture/arrow_up.png"); 
       flag_option=0;
     }
     else{
       $('#options').css('display','none'); 
+      $('#down2').attr("src","picture/arrow_down.png"); 
       flag_option=1;
     }
   });
@@ -148,13 +185,13 @@ var flag_option=1;
   $('#kid').click(function(){
     if(flag_kid==1){
       $('#kid_agency').css('display','block');
-      $('#old').animate({marginTop:'10vh'},0);
-      $('#kid_agency').animate({marginLeft:'20%'},0);
+      $('#sick').animate({marginTop:'10vh'},0);
+      $('#kid_agency').animate({marginLeft:'10%'},0);
       flag_kid=0;
     }
     else{
       $('#kid_agency').css('display','none');
-      $('#old').animate({marginTop:'0%'},0); 
+      $('#sick').animate({marginTop:'0%'},0); 
       flag_kid=1;
     }
   });
@@ -164,7 +201,7 @@ var flag_option=1;
   $('#sick').click(function(){
     if(flag_sick==1){
       $('#sick_agency').css('display','block');
-      $('#sick_agency').animate({marginLeft:'20%'},0);
+      $('#sick_agency').animate({marginLeft:'10%'},0);
       flag_sick=0;
     }
     else{

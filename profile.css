@@ -18,14 +18,17 @@ overflow:hidden;
 }
 #menu_top{
   width:100%;
-  height:30vw;
+  height:20vh;
   background-color:rgb(255,228,146);
+}
+#menu_bottom{
+  height:70vh;
 }
 #menu_pic{
   margin-left:10%;
-  margin-top:5vw;
-  height:20vw;
-  width:20vw;
+  margin-top:4vh;
+  height:12vh;
+  width:12vh;
   border-style:solid;
   border-radius:50%;
   border-color:rgba(169,134,80,0.2);
@@ -34,10 +37,15 @@ overflow:hidden;
 #QRcode,#donate{
   float:left;
   margin-top:5vw;
-  height:20vw;
-  width:70%;
-  margin-left:30%;
+  height:25vw;
+  width:80%;
+  margin-left:20%;
   border-color:rgba(255,255,255,0);
+}
+#down,#down2{
+  width:3vw;
+  margin-top:7vw;
+  float:left;
 }
 #QRcode_img{
   display:none;
@@ -58,8 +66,8 @@ overflow:hidden;
   width:50%;
 }
 #options{
-  margin-left:50%;
-  width:50%;
+  margin-left:40%;
+  width:60%;
   float:left;
   display:none;
 }
@@ -70,6 +78,26 @@ overflow:hidden;
   width:100%;
   float:left;
   display:none;
+}
+#kid_1{
+  width:90%;
+  height:7vw;
+  float:left;
+}
+#kid_1_text{
+  font-size:3vw;
+  float:left;
+  width:50%;
+  margin-top:2vw;
+}
+#star{
+  width:10%;
+  float:left;
+  margin-top:2vw;
+}
+#icon{
+  width:5%;
+  margin-left:47.5%;
 }
 #topbar{
 width:100%;
