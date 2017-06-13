@@ -1,0 +1,313 @@
+
+
+
+@font-face{font-family:seguiemj; src:url(font/seguiemj.ttf);}
+@font-face{font-family:chinese; src:url(font/chinese.ttf);}
+
+body
+{
+  background-color:white;
+    font-family:"seguiemj";
+      margin:5%;
+      }
+
+      p
+      {
+        color:rgb(169,124,80);
+        }
+
+        #banner
+        {
+          width:100%;
+            margin-top:10%;
+            }
+
+            #icon{
+              margin-top:-5%;
+                width:8%;
+                  float:left;
+                  }
+
+                  #title{
+
+                    margin-left:37%;
+                      font-size:4vw;
+                      }
+
+                      #main_intro{
+                        margin-top:6%;
+                          width:100%;
+                            font-size:2vw;
+                            }
+
+                            #example_pic
+                            {
+                              width:100%;
+                              }
+
+                              #pic_1{
+                                margin-top:3%;
+                                  width:20%;
+                                    margin-left:15%;
+                                    }
+
+                                    #pic_2{
+                                      margin-top:3%;
+                                        width:20%;
+                                          margin-left:10%;
+                                          }
+
+                                          #pic_3{
+                                            margin-top:3%;
+                                              width:10%;
+                                                margin-left:13%;
+                                                }
+
+                                                #explain
+                                                {
+                                                  margin-top:2%;
+                                                    width:100%;
+                                                    }
+
+                                                    #for_pic1{
+                                                      margin-top:4%;
+                                                        font-size:1.5vw;
+                                                          margin-left:20%;
+                                                            width:20%;
+                                                              display: inline;
+                                                              }
+
+                                                              #for_pic2{
+                                                                margin-top:4%;
+                                                                  font-size:1.5vw;
+                                                                    margin-left:20%;
+                                                                      width:20%;
+                                                                        display: inline;
+                                                                        }
+
+                                                                        #for_pic3{
+                                                                          margin-top:4%;
+                                                                            font-size:1.5vw;
+                                                                              margin-left:18%;
+                                                                                width:20%;
+                                                                                  display: inline;
+                                                                                    }
+                                                                                    /*
+                                                                                    #whiteland{
+                                                                                      font-size:1vw;
+                                                                                        background-color:black;
+                                                                                          z-index:-2;
+                                                                                          }
+                                                                                            */
+                                                                                            #grassland{
+                                                                                              font-size:16vw;
+                                                                                                margin-top:0%;
+                                                                                                  background-size:100% 50%;
+                                                                                                    background-position: bottom center;
+                                                                                                      background-color:rgb(138,164,62);
+                                                                                                        z-index:-100;
+                                                                                                        }
+                                                                                                        #land{
+                                                                                                          margin-top:-55%;
+                                                                                                          }
+                                                                                                          #cellphone_1{
+                                                                                                            margin-top:5%;
+                                                                                                              width:15%;
+                                                                                                                margin-left:7%;
+                                                                                                                  z-index:100;
+                                                                                                                  }
+
+                                                                                                                  #cellphone_2{
+                                                                                                                    margin-top:5%;
+                                                                                                                      width:15%;
+                                                                                                                        margin-left:2%;
+                                                                                                                          z-index:100;
+                                                                                                                          }
+
+                                                                                                                          #cellphone_3{
+                                                                                                                            margin-top:5%;
+                                                                                                                              width:15%;
+                                                                                                                                margin-left:2%;
+                                                                                                                                  z-index:100;
+                                                                                                                                  }
+
+                                                                                                                                  #google_play{
+                                                                                                                                    margin-top:5%;
+                                                                                                                                      width:15%;
+                                                                                                                                        margin-left:13%;
+                                                                                                                                          z-index:100;
+                                                                                                                                            margin-bottom:3%;
+                                                                                                                                            }
+
+                                                                                                                                            #download{
+                                                                                                                                              font-size:2.5vw;
+                                                                                                                                                color:white;
+                                                                                                                                                  margin-top:-17%;
+                                                                                                                                                    width:30%;
+                                                                                                                                                      margin-left:69%;
+                                                                                                                                                        z-index:200;
+                                                                                                                                                        }
+
+                                                                                                                                                        #download_p{
+                                                                                                                                                          color:white;
+                                                                                                                                                          }
+
+                                                                                                                                                          #team{
+                                                                                                                                                            padding-top:10%;
+                                                                                                                                                              font-size:2.5vw;
+                                                                                                                                                                margin-left:3%;
+                                                                                                                                                                }
+
+                                                                                                                                                                #team_p{
+                                                                                                                                                                  border-left:solid;
+                                                                                                                                                                    border-color:rgb(138,164,62);
+                                                                                                                                                                      border-width:5px;
+                                                                                                                                                                      }
+
+                                                                                                                                                                      #self_photo{
+                                                                                                                                                                        padding-top:5%;
+                                                                                                                                                                        }
+
+                                                                                                                                                                        #Amy
+                                                                                                                                                                        {
+                                                                                                                                                                          width:10%;
+                                                                                                                                                                            margin-left:7%;
+                                                                                                                                                                            }
+                                                                                                                                                                            #Jelly
+                                                                                                                                                                            {
+                                                                                                                                                                              width:10%;
+                                                                                                                                                                                margin-left:7%;
+                                                                                                                                                                                }
+                                                                                                                                                                                #Lin
+                                                                                                                                                                                {
+                                                                                                                                                                                  width:10%;
+                                                                                                                                                                                    margin-left:7%;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    #Lucy
+                                                                                                                                                                                    {
+                                                                                                                                                                                      width:10%;
+                                                                                                                                                                                        margin-left:7%;
+                                                                                                                                                                                        }
+                                                                                                                                                                                        #chiaching
+                                                                                                                                                                                        {
+                                                                                                                                                                                          width:10%;
+                                                                                                                                                                                            margin-left:7%;
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            #self_intro_1{
+                                                                                                                                                                                              padding-top:5%;
+                                                                                                                                                                                                font-size:1.5vw;
+                                                                                                                                                                                                }
+
+                                                                                                                                                                                                #Amy_p
+                                                                                                                                                                                                {
+                                                                                                                                                                                                  display: inline;
+                                                                                                                                                                                                    width:8%;
+                                                                                                                                                                                                      border-left:solid;
+                                                                                                                                                                                                        border-color:rgb(138,164,62);
+                                                                                                                                                                                                          border-width:5px;
+                                                                                                                                                                                                          }
+                                                                                                                                                                                                          #Jelly_p
+                                                                                                                                                                                                          {
+                                                                                                                                                                                                            display: inline;
+                                                                                                                                                                                                              width:8%;
+                                                                                                                                                                                                                border-left:solid;
+                                                                                                                                                                                                                  border-color:rgb(138,164,62);
+                                                                                                                                                                                                                    border-width:5px;
+                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                    #Lin_p
+                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                      display: inline;
+                                                                                                                                                                                                                        width:8%;
+                                                                                                                                                                                                                            border-left:solid;
+                                                                                                                                                                                                                              border-color:rgb(138,164,62);
+                                                                                                                                                                                                                                border-width:5px;
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                #Lucy_p
+                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                  display: inline;
+                                                                                                                                                                                                                                    width:8%;
+                                                                                                                                                                                                                                        border-left:solid;
+                                                                                                                                                                                                                                          border-color:rgb(138,164,62);
+                                                                                                                                                                                                                                            border-width:5px;
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                            #chiaching_p
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                              display: inline;
+                                                                                                                                                                                                                                                width:8%;
+                                                                                                                                                                                                                                                    border-left:solid;
+                                                                                                                                                                                                                                                      border-color:rgb(138,164,62);
+                                                                                                                                                                                                                                                        border-width:5px;
+                                                                                                                                                                                                                                                        }
+
+
+
+                                                                                                                                                                                                                                                        #A
+                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                          display: inline;
+                                                                                                                                                                                                                                                            width:15%;
+                                                                                                                                                                                                                                                              margin-left:2%;
+                                                                                                                                                                                                                                                                float:left;
+                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                #B
+                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                  display: inline;
+                                                                                                                                                                                                                                                                    width:15%;
+                                                                                                                                                                                                                                                                      margin-left:5%;
+                                                                                                                                                                                                                                                                        float:left;
+                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                        #C
+                                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                                          display: inline;
+                                                                                                                                                                                                                                                                            width:15%;
+                                                                                                                                                                                                                                                                              margin-left:5%;
+                                                                                                                                                                                                                                                                                float:left;
+                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                #D
+                                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                                  display: inline;
+                                                                                                                                                                                                                                                                                    width:15%;
+                                                                                                                                                                                                                                                                                      margin-left:2%;
+                                                                                                                                                                                                                                                                                        float:left;
+                                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                                                          #E
+                                                                                                                                                                                                                                                                                          {
+                                                                                                                                                                                                                                                                                            display: inline;
+                                                                                                                                                                                                                                                                                              width:15%;
+                                                                                                                                                                                                                                                                                                margin-left:3%;
+                                                                                                                                                                                                                                                                                                  float:left;
+                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                    #contact{
+                                                                                                                                                                                                                                                                                                      padding-top:23%;
+                                                                                                                                                                                                                                                                                                        font-size:2.5vw;
+                                                                                                                                                                                                                                                                                                          margin-left:3%;
+                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                          #contact_p{
+                                                                                                                                                                                                                                                                                                            border-left:solid;
+                                                                                                                                                                                                                                                                                                              border-color:rgb(138,164,62);
+                                                                                                                                                                                                                                                                                                                border-width:5px;
+                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                #fb
+                                                                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                                                                  width:7%;
+                                                                                                                                                                                                                                                                                                                    margin-left:3%;
+                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                    #email
+                                                                                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                                                                                      width:6%;
+                                                                                                                                                                                                                                                                                                                        margin-left:3%;
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        #ig
+                                                                                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                                                                                          width:6%;
+                                                                                                                                                                                                                                                                                                                            margin-left:3%;
+                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                            #copyright_p{
+                                                                                                                                                                                                                                                                                                                              margin-top:20%; 
+                                                                                                                                                                                                                                                                                                                                font-size:1vw;
+                                                                                                                                                                                                                                                                                                                                }
+
