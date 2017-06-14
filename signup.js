@@ -46,7 +46,7 @@ $('#create').click(function(){
     check[2] = 1;
   }
 
-  if( $('input[name=email"]').val() == '' ){
+  if( $('input[name="email"]').val() == '' ){
     document.getElementById("email_text").innerHTML = "email不可空白";
     document.getElementById("email_text").style.color = "red";
     check[3] = 0;

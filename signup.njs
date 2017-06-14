@@ -33,6 +33,9 @@ var signup_data={
       console.log(err);
       throw error;
     }
+    else{
+      console.log('succ');
+    }
 
 });
 
