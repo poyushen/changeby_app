@@ -1,0 +1,86 @@
+
+
+<html>
+<head>
+<title>Sunshine</title>
+<link rel="stylesheet" href="donate_children.css">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<!--star-->
+<script type="text/javascript">
+function rate(obj,oEvent){
+  // 图片地址设置
+  var imgSrc = 'picture/star.png'; //没有填色的星星
+  var imgSrc_2 = 'picture/star_full.png'; //打分后有颜色的星星
+  if(obj.rateFlag) return;
+  var e = oEvent || window.event;
+  var target = e.target || e.srcElement; 
+  var imgArray = obj.getElementsByTagName("img");
+  for(var i=0;i<imgArray.length;i++){
+    imgArray[i]._num = i;
+    imgArray[i].onclick=function(){
+      if(obj.rateFlag) return;
+      obj.rateFlag=true;
+      alert(this._num+1); //this._num+1这个数字写入到数据库中,作为评分的依据
+    };
+  }
+  if(target.tagName=="IMG"){
+    for(var j=0;j<imgArray.length;j++){
+      if(j<=target._num){
+        imgArray[j].src=imgSrc_2;
+      } else {
+        imgArray[j].src=imgSrc;
+      }
+    }
+  } else {
+    for(var k=0;k<imgArray.length;k++){
+      imgArray[k].src=imgSrc;
+    }
+  }
+}
+</script>
+<!--star_end-->
+
+</head>
+
+<body>
+<div id="banner">
+<img id ="arrow" src="picture/arrow.png" alt="back_button" >
+<p id="name">創世基金會</p>
+</div>
+<div id="main_picture">
+<img id="picture" src="picture/genesis.png">
+</div>
+
+<div id="main_intro">
+<p id="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;創世前前後後安養了超過
+一千六百多位植物人，幫助上千個辛苦傷心的家庭，這都是靠著社會上愛心朋友
+的支持，弱勢才享有這份福澤。在「安樂死」沒有合法化前，創世仍堅持給這些
+植物人最妥善的「安養」，不能因為他們沒有知覺，而放棄他們應該享有人的基本權利。
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　現在，創世服務經費近九成來自社
+會大眾的不定期小額捐款，每筆捐款均開立正式收據並專款專用。需要您熱心的加入與鼓勵，懇請支持。</p>
+</div>
+
+<div id="main_QRCode">
+<img id="QRCode" src="picture/test.png">
+</div>
+
+<div id="star">
+<p onmouseover="rate(this,event)">
+<img src="picture/star.png" title="爛爛的" id="star_1"/>
+<img src="picture/star.png" title="一般般" id="star_1"/>
+<img src="picture/star.png" title="還行啦" id="star_1"/>
+<img src="picture/star.png" title="不錯喔" id="star_1"/>
+<img src="picture/star.png" title="優秀秀" id="star_1"/>
+</p>
+</div>
+
+<div id="main_information">
+<p  id="information" align="center">http://www.genesis.org.tw/enter.php<br>
+第一辦公室：100台北市北平東路28號4樓   電話：第一辦公室(02)2396-7777
+<br>郵撥：12238589　戶名：創世基金會 
+</p>
+</div>
+
+</body>
+
+</html>
