@@ -48,7 +48,8 @@ width:40%;
 
 #main_intro
 {
-width:80%;
+      font-family:"chinese";
+      width:80%;
       margin-top:10%;
       margin-left:10%;
 }
