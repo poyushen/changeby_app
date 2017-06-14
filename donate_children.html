@@ -1,0 +1,87 @@
+
+
+<html>
+<head>
+<title>donate</title>
+<link rel="stylesheet" href="donate_children.css">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<!--star-->
+<script type="text/javascript">
+function rate(obj,oEvent){
+  // 图片地址设置
+  var imgSrc = 'picture/star.png'; //没有填色的星星
+  var imgSrc_2 = 'picture/star_full.png'; //打分后有颜色的星星
+  if(obj.rateFlag) return;
+  var e = oEvent || window.event;
+  var target = e.target || e.srcElement; 
+  var imgArray = obj.getElementsByTagName("img");
+  for(var i=0;i<imgArray.length;i++){
+    imgArray[i]._num = i;
+    imgArray[i].onclick=function(){
+      if(obj.rateFlag) return;
+      obj.rateFlag=true;
+      alert(this._num+1); //this._num+1这个数字写入到数据库中,作为评分的依据
+    };
+  }
+  if(target.tagName=="IMG"){
+    for(var j=0;j<imgArray.length;j++){
+      if(j<=target._num){
+        imgArray[j].src=imgSrc_2;
+      } else {
+        imgArray[j].src=imgSrc;
+      }
+    }
+  } else {
+    for(var k=0;k<imgArray.length;k++){
+      imgArray[k].src=imgSrc;
+    }
+  }
+}
+</script>
+<!--star_end-->
+
+</head>
+
+<body>
+<div id="banner">
+<img id ="arrow" src="picture/arrow.png" alt="back_button" >
+<p id="name">兒童福利聯盟</p>
+</div>
+<div id="main_picture">
+<img id="picture" src="picture/children.png">
+</div>
+
+<div id="main_intro">
+<p id="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;兒童福利聯盟是一公益
+性的組織，非以營利為目標。自成立以來一直致力於兒童福利工作的推展，除
+持續法令政策的修訂與倡導之外，亦因應社會變遷與問題，開展了許多新興的
+直接服務方案，包括收出養服務、失蹤兒童協尋服務、棄兒保護服務、 托育諮
+詢服務等，兒盟秉持為兒童謀取最佳福利的宗旨，由專業的社工人員一方 面為
+特殊際遇兒童提供相關保護工作，同時也 為一般性家庭建構完整的支持網絡。
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</div>
+
+<div id="main_QRCode">
+<img id="QRCode" src="picture/test.png">
+</div>
+
+<div id="star">
+<p onmouseover="rate(this,event)">
+<img src="picture/star.png" title="爛爛的" id="star_1"/>
+<img src="picture/star.png" title="一般般" id="star_1"/>
+<img src="picture/star.png" title="還行啦" id="star_1"/>
+<img src="picture/star.png" title="不錯喔" id="star_1"/>
+<img src="picture/star.png" title="優秀秀" id="star_1"/>
+</p>
+</div>
+
+<div id="main_information">
+<p  id="information" align="center">http://www.children.org.tw/<br>
+台北市大同區10351長安西路43號6樓 （02) 2550-5959  
+<br>統一編號 : 01013257 劃撥帳號 : 15688659
+</p>
+</div>
+
+</body>
+
+</html>
