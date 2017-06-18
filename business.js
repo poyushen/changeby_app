@@ -10,7 +10,7 @@ $('#check').click(function(){
     success:function(msg){
       console.log(msg);
       localStorage.setItem("store_remainder",msg);
-//      location.reload();
+      location.reload();
    }
   });
 });

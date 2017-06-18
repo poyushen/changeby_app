@@ -76,7 +76,9 @@
           </div>
         </div>
       </div>
-      <img src='picture/icon.png' id='icon'>
+      <div id='bottom_icon'>
+        <img src='picture/icon.png' id='icon'>
+      </div>
     </div>
 
     <div id='right'>
@@ -102,7 +104,6 @@
 
         <div id='purpose'>
           <p id='name'>名稱</p>
-          <p>存款目的</p>
         </div>
       </div>
       
@@ -139,7 +140,13 @@
 </div>
 <script src='signup.js'></script>
 <script>
-document.getElementById("name").innerHTML=localStorage.getItem("key");
+  var flag_name=localStorage.getItem("flag_name");
+  if(flag_name=='0'){
+    document.getElementById("name").innerHTML=localStorage.getItem("name");
+  }
+  if(flag_name=='1'){
+    document.getElementById("name").innerHTML=localStorage.getItem("key");
+  }
 </script>
 <script src='process.js'></script>
 <script>
@@ -257,12 +264,11 @@ modal.style.display = "none";
 $(function(){
 var w = $("#left").width();
 var flag=1;
-//$('#left').css('height', ($('#full').height()) );
 
 $('input[name=menu]').click(function(){
 if(flag==1){
 $('#left').css('height', ($('#full').height()) );
-$('#full').animate({width:'195%'},1000);
+$('#full').animate({width:'190%'},1000);
 $('#left').animate({marginLeft:'0px'},1000);
 $('#right').animate({marginLeft:'10%'},1000);
 flag=0;
