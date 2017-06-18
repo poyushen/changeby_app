@@ -15,8 +15,7 @@ var connection=mysql.createConnection({
 });
 
 connection.connect();
-
-connection.query('select money from sign_up where ?' , {username: 'poyushen'}, (err, res) => {
+connection.query('SELECT money FROM sign_up WHERE ?' ,{username:'poyushen'} , (err, res) => {
   var current=parseInt(res[0].money);
   console.log(current);
   connection.end();

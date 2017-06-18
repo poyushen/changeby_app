@@ -20,7 +20,7 @@
           <p id='barcode_text'>QRcode</p>
           <img src='picture/arrow_down.png' id='down'> 
           <div id='QRcode_img'>
-            <img src='picture/QRcode.jpg' style='width:50%'>
+            <img id='dynamic_qr' style='width:50%'>
           </div>      
         </div>
         <div id='donate'>
@@ -139,6 +139,11 @@
   </div>
 </div>
 <script src='signup.js'></script>
+<script>
+  var text=localStorage.getItem("name");
+
+  $("#dynamic_qr").attr("src","http://chart.apis.google.com/chart?cht=qr&chl="+ text +"&chs=120x120");
+</script>
 <script>
   var flag_name=localStorage.getItem("flag_name");
   if(flag_name=='0'){
