@@ -18,7 +18,6 @@ function rate(obj,oEvent){
     imgArray[i].onclick=function(){
       if(obj.rateFlag) return;
       obj.rateFlag=true;
-      alert(this._num+1); //this._num+1这个数字写入到数据库中,作为评分的依据
     };
   }
   if(target.tagName=="IMG"){
