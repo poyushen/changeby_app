@@ -14,8 +14,10 @@ var connection=mysql.createConnection({
   database:'uidd2017_groupL'
 });
 
+var s=param.user;
+var r=s.replace(/\n/g,'');
 connection.connect();
-connection.query('SELECT money FROM sign_up WHERE ?' ,{username:'poyushen'} , (err, res) => {
+connection.query('SELECT money FROM sign_up WHERE ?' ,{username:r} , (err, res) => {
   var current=parseInt(res[0].money);
   console.log(current);
   connection.end();

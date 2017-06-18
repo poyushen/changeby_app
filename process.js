@@ -1,11 +1,9 @@
-var user;
-user=localStorage.getItem("name");
-console.log(user);
+console.log(localStorage.getItem('name'));
 $.ajax({
   type:"POST",
   url:"process.njs",
   data:{
-    user:user
+    user:localStorage.getItem('name'),
   },
   success:function(receive_data){
     console.log(receive_data);
