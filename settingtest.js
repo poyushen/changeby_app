@@ -6,7 +6,6 @@ $('#change').click(function(){
       username:$('input[name="username"]').val(),
       pwd:$('input[name="pwd"]').val(),
       pwd1:$('input[name="pwd1"]').val(),
-      bankcode1:$('input[name="bank_code1"]').val(),
     },
     success:function(msg){
       if(msg == 1){
@@ -19,5 +18,6 @@ $('#change').click(function(){
     error:function(){
       console.log('error');
     },
+
   });
 });

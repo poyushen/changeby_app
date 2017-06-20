@@ -22,15 +22,15 @@ connection.connect(function(err) {
 });
 
 //var email = "weichen@gmail.com"
-//var pwd = "1234"
-//var username = "weichen"
-//var bankcode1 = "1111"
+var pwd = param.pwd ;
+var username = param.username ;
+var pwd1 = param.pwd1 ;
 
-connection.query('select password from sign_up where?',{username:param.username},(err,res) =>{
-  if(res[0].password==param.pwd){
+connection.query('select password from sign_up where?',{username:username},(err,res) =>{
+  if(res[0].password==pwd){
     var sql = "UPDATE sign_up SET password = ? WHERE username = ?";
     flag=1;
-    connection.query(sql, [param.pwd1, param.username], function (err, result) {
+    connection.query(sql, [pwd1, username], function (err, result) {
       if (err) throw err;
       console.log(flag);
     });
